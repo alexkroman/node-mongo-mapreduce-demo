@@ -1,6 +1,6 @@
 {
-    "name": "Nodetimer"
-  , "description": "Timer app for developers"
+    "name": "twitter-example"
+  , "description": "Twitter example app"
   , "version": "1.0.0"
   , "private": true
   , "author": "Alex Kroman <alexkroman@gmail.com> (http://alexkroman.com)"
@@ -9,18 +9,11 @@
       , "npm": "1.1.65"
     }
   , "scripts": {
-      "start": "./node_modules/.bin/nodemon server.js"
+      "start": "node debug server.js"
     }
   , "dependencies": {
       "express": "latest"
-    , "jade": "latest"
     , "mongoose": "latest"
     , "connect-mongo": "latest"
-    , "passport": "latest"
-    , "passport-local": "latest"
-    , "underscore": "latest"
-    , "async": "latest"
-    , "nodemon": "latest"
-    , "stylus": "latest"
   }
 }
