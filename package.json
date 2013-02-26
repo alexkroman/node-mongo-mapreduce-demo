@@ -15,5 +15,6 @@
       "express": "latest"
     , "mongoose": "latest"
     , "connect-mongo": "latest"
+    , "underscore": "latest"
   }
 }
