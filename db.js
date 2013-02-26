@@ -13,13 +13,16 @@ PostSchema.pre('save', function (next) {
 
 PostSchema.statics.tags = function(callback) {
   var o = {};
+  var i = 0;
 
   o.map = function() {
+
     if (!this.tags) {
       return;
     }
-    for (index in this.tags) {
-      emit(this.tags[index], 1);
+
+    for (i = 0; i < this.tags.length; i += 1) {
+      emit(this.tags[i], 1);
     }
   };
 
@@ -27,8 +30,8 @@ PostSchema.statics.tags = function(callback) {
 
     var count = 0;
 
-    for (index in current) {
-      count += current[index];
+    for (i = 0; i < current.length; i += 1) {
+      count += current[i];
     }
 
     return count;
